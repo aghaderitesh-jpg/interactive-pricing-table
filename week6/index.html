@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Pricing Table</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Pricing Plans</h1>
+
+    <div class="pricing-container">
+
+        <!-- Basic Plan -->
+        <div class="plan">
+            <h2>Basic</h2>
+            <h3>₹500</h3>
+
+            <label>
+                <input type="checkbox" class="addon" value="100">
+                Extra Storage (+₹100)
+            </label>
+
+            <button onclick="calculatePrice(500)">
+                Select Plan
+            </button>
+        </div>
+
+        <!-- Standard Plan -->
+        <div class="plan">
+            <h2>Standard</h2>
+            <h3>₹1000</h3>
+
+            <label>
+                <input type="checkbox" class="addon" value="200">
+                Priority Support (+₹200)
+            </label>
+
+            <button onclick="calculatePrice(1000)">
+                Select Plan
+            </button>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="plan">
+            <h2>Premium</h2>
+            <h3>₹1500</h3>
+
+            <label>
+                <input type="checkbox" class="addon" value="300">
+                Advanced Features (+₹300)
+            </label>
+
+            <button onclick="calculatePrice(1500)">
+                Select Plan
+            </button>
+        </div>
+
+    </div>
+
+    <div class="total-section">
+        <h2>Total Price: ₹<span id="total">0</span></h2>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
